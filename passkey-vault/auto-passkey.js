@@ -544,8 +544,14 @@ async function createPasskeyOnSite() {
   const hasList = await evalJs("!!document.querySelector('[class*=passkeyList]')").catch(() => false);
   if (!hasList) {
     await navigate(BASE + "/hub/settings#passkeys");
+    // Wait for passkey section to render (RDP can be slow)
+    for (let w = 0; w < 30; w++) {
+      await sleep(500);
+      const list = await evalJs("!!document.querySelector('[class*=passkeyList]')").catch(() => false);
+      if (list) break;
+    }
   }
-  await sleep(250);
+  await sleep(500);
   await removeCookieModal();
   const dismissed = await evalJs(`(() => {
     const btns = [...document.querySelectorAll('[role=dialog] button')];
@@ -565,18 +571,22 @@ async function createPasskeyOnSite() {
 
   const before = await evalJs("window.__passkeyVault ? window.__passkeyVault.list().length : 0").catch(() => 0);
 
-  let r = await clickByText("Create passkey", { exact: false });
+  r = await clickByText("Create passkey", { exact: false });
   if (/not found/.test(r)) r = await clickByText("Add passkey", { exact: false });
   if (/not found/.test(r)) r = await clickByText("Add Passkey", { exact: false });
   if (/not found/.test(r)) r = await clickByText("Create Passkey", { exact: false });
+  if (/not found/.test(r)) r = await clickByText("Create", { exact: false });
+  if (/not found/.test(r)) r = await clickByText("Add", { exact: false });
   if (/not found/.test(r)) {
     await removeCookieModal();
     r = await clickByText("Passkey", { exact: false, ci: true });
     if (/not found/.test(r)) throw new Error("passkey settings not reachable: " + r);
-    await sleep(300);
+    await sleep(500);
     r = await clickByText("Create passkey", { exact: false });
     if (/not found/.test(r)) r = await clickByText("Add passkey", { exact: false });
+    if (/not found/.test(r)) r = await clickByText("Add Passkey", { exact: false });
     if (/not found/.test(r)) r = await clickByText("Create", { exact: false });
+    if (/not found/.test(r)) r = await clickByText("Add", { exact: false });
     if (/not found/.test(r)) throw new Error("passkey create button not found after opening settings: " + r);
   }
   console.log("create clicked ->", r, "at", Date.now() - t0 + "ms");
