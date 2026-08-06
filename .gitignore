@@ -14,3 +14,16 @@ __pycache__/
 *.pyc
 .env
 config.json
+package-lock.json
+*.tsbuildinfo
+# IDE tool folders
+.amazonq/
+.augment/
+.claude/
+.codex/
+.continue/
+.cursor/
+.gemini/
+.github/
+.opencode/
+.windsurf/

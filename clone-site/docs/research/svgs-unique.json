@@ -1,0 +1,158 @@
+[
+ {
+  "id": 1,
+  "count": 1,
+  "sample": "<svg class=\"\" fill=\"none\" height=\"16\" viewBox=\"0 0 32 32\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.959 8.62574C18.3494 8.23532 18.9825 8.23554 19.373 8.62574L26.04 15.2927L26.1064 15.366C26.2522 15.5439 26.333 15.7678 26.333 15.9998C26.3329 16.2649 26.2275 16.5193 26.04 16.7068L19.373 23.3728C18.9825 23.7632 18.3495 23.7633 17.959 23.3728C17.569 22.9823 17.5688 22.3491 17.959 21.9587L22.9189 16.9998H6.66602C6.11414 16.9994 5.66619 16.5517 5.66602 15.9998C5.66602 15.4477 6.11403 15.0001 6.66602 14.9998H22.9189L17.959 10.0398C17.5689 9.64936 17.5689 9.01618 17.959 8.62574Z\" fill=\"#F7F9FA\"></path></svg>",
+  "ctx": "Get Started"
+ },
+ {
+  "id": 2,
+  "count": 1,
+  "sample": "<svg class=\"\" fill=\"none\" height=\"16\" viewBox=\"0 0 32 32\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.959 8.62574C18.3494 8.23532 18.9825 8.23554 19.373 8.62574L26.04 15.2927L26.1064 15.366C26.2522 15.5439 26.333 15.7678 26.333 15.9998C26.3329 16.2649 26.2275 16.5193 26.04 16.7068L19.373 23.3728C18.9825 23.7632 18.3495 23.7633 17.959 23.3728C17.569 22.9823 17.5688 22.3491 17.959 21.9587L22.9189 16.9998H6.66602C6.11414 16.9994 5.66619 16.5517 5.66602 15.9998C5.66602 15.4477 6.11403 15.0001 6.66602 14.9998H22.9189L17.959 10.0398C17.5689 9.64936 17.5689 9.01618 17.959 8.62574Z\" fill=\"#1199FA\"></path></svg>",
+  "ctx": "View Live Prices"
+ },
+ {
+  "id": 3,
+  "count": 1,
+  "sample": "<svg class=\"\" fill=\"none\" height=\"13\" viewBox=\"0 -0.5 13 8\" width=\"13\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.9583 0.625L7.29167 5.29167L4.625 2.625L0.625 6.625\" stroke=\"#92D1FF\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\"></path><path d=\"M9.95833 0.625H11.9583V2.625\" stroke=\"#92D1FF\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\"></path></svg>",
+  "ctx": "Trending"
+ },
+ {
+  "id": 4,
+  "count": 1,
+  "sample": "<svg class=\"\" fill=\"none\" height=\"14\" viewBox=\"0 0 11 14\" width=\"11\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5.11548 12.3962C2.61364 12.3962 0.625 11.0883 0.625 7.81854C0.625 4.54875 3.83248 4.54875 3.83248 0.625C5.75698 1.93292 6.63583 3.30623 7.03997 5.85666C7.6921 5.38813 8.14953 4.68865 8.32296 3.89479C8.96446 4.54875 9.60596 6.51062 9.60596 7.81854C9.60596 9.87196 8.78484 12.3962 5.11548 12.3962Z\" stroke=\"#A0A9BE\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.25\"></path></svg>",
+  "ctx": "Top Movers"
+ },
+ {
+  "id": 5,
+  "count": 1,
+  "sample": "<svg class=\"\" fill=\"none\" height=\"32\" viewBox=\"0 0 32 32\" width=\"32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.627 8.62574C13.0175 8.23554 13.6506 8.23532 14.041 8.62574C14.4311 9.01618 14.4311 9.64936 14.041 10.0398L9.08105 14.9998H25.334C25.886 15.0001 26.334 15.4477 26.334 15.9998C26.3338 16.5517 25.8859 16.9994 25.334 16.9998H9.08105L14.041 21.9587C14.4312 22.3491 14.431 22.9823 14.041 23.3728C13.6505 23.7633 13.0175 23.7632 12.627 23.3728L5.95996 16.7068C5.7725 16.5193 5.66708 16.2649 5.66699 15.9998C5.66699 15.7678 5.74782 15.5439 5.89355 15.366L5.95996 15.2927L12.627 8.62574Z\" fill=\"#A0A9BE\"></path></svg>",
+  "ctx": "[object SVGAnimatedString]"
+ },
+ {
+  "id": 6,
+  "count": 1,
+  "sample": "<svg class=\"\" fill=\"none\" height=\"32\" viewBox=\"0 0 32 32\" width=\"32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.959 8.62574C18.3494 8.23532 18.9825 8.23554 19.373 8.62574L26.04 15.2927L26.1064 15.366C26.2522 15.5439 26.333 15.7678 26.333 15.9998C26.3329 16.2649 26.2275 16.5193 26.04 16.7068L19.373 23.3728C18.9825 23.7632 18.3495 23.7633 17.959 23.3728C17.569 22.9823 17.5688 22.3491 17.959 21.9587L22.9189 16.9998H6.66602C6.11414 16.9994 5.66619 16.5517 5.66602 15.9998C5.66602 15.4477 6.11403 15.0001 6.66602 14.9998H22.9189L17.959 10.0398C17.5689 9.64936 17.5689 9.01618 17.959 8.62574Z\" fill=\"#A0A9BE\"></path></svg>",
+  "ctx": "[object SVGAnimatedString]"
+ },
+ {
+  "id": 7,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-0\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-76-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-79\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop></lin",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 8,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-1\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-156-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-159\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop></l",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 9,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-2\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-236-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-239\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop></l",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 10,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-3\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-316-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-319\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop></l",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 11,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-4\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-396-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-399\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop></l",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 12,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-5\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-476-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-479\"><stop offset=\"0\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0\"></stop></l",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 13,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-6\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-556-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-559\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop></l",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 14,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-7\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-636-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-639\"><stop offset=\"0\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0\"></stop></l",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 15,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-8\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-716-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-719\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop></l",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 16,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-9\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-796-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-799\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop></l",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 17,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-10\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-876-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-879\"><stop offset=\"0\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0\"></stop></",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 18,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-11\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-956-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-959\"><stop offset=\"0\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0\"></stop></",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 19,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-12\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-1036-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-1039\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop>",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 20,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-13\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-1116-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-1119\"><stop offset=\"0\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(0,166,140)\" stop-opacity=\"0\"></stop>",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 21,
+  "count": 1,
+  "sample": "<svg version=\"1.1\" class=\"highcharts-root\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, sans-serif; font-size: 1rem;\" xmlns=\"http://www.w3.org/2000/svg\" width=\"410\" height=\"260\" viewBox=\"0 0 410 260\" role=\"img\" aria-label=\"\"><desc>Created with Highcharts 12.4.0</desc><defs><filter id=\"highcharts-drop-shadow-14\"><feDropShadow dx=\"1\" dy=\"1\" flood-color=\"#000000\" flood-opacity=\"0.75\" stdDeviation=\"2.5\"></feDropShadow></filter><clipPath id=\"highcharts-ovsamlm-1196-\"><rect x=\"0\" y=\"0\" width=\"410\" height=\"235\" fill=\"none\"></rect></clipPath><linearGradient x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" id=\"highcharts-ovsamlm-1199\"><stop offset=\"0\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0.41\"></stop><stop offset=\"1\" stop-color=\"rgb(255,92,86)\" stop-opacity=\"0\"></stop>",
+  "ctx": "Created with Highcharts 12.4.0"
+ },
+ {
+  "id": 22,
+  "count": 1,
+  "sample": "<svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\"><path class=\"ot-floating-button__svg-fill\" d=\"M14.588 0l.445.328c1.807 1.303 3.961 2.533 6.461 3.688 2.015.93 4.576 1.746 7.682 2.446 0 14.178-4.73 24.133-14.19 29.864l-.398.236C4.863 30.87 0 20.837 0 6.462c3.107-.7 5.668-1.516 7.682-2.446 2.709-1.251 5.01-2.59 6.906-4.016zm5.87 13.88a.75.75 0 00-.974.159l-5.475 6.625-3.005-2.997-.077-.067a.75.75 0 00-.983 1.13l4.172 4.16 6.525-7.895.06-.083a.75.75 0 00-.16-.973z\" fill=\"#FFF\" fill-rule=\"evenodd\"></path></svg>",
+  "ctx": "[object SVGAnimatedString]"
+ },
+ {
+  "id": 23,
+  "count": 1,
+  "sample": "<svg id=\"pc-header-button-close\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" style=\"cursor: pointer;\"><path d=\"M3.5249 3.5249C3.76898 3.28082 4.16461 3.28082 4.40869 3.5249L7.99951 7.11475L11.5239 3.59131C11.7679 3.34735 12.1636 3.34757 12.4077 3.59131C12.6518 3.83539 12.6518 4.23102 12.4077 4.4751L8.8833 7.99854L12.4087 11.5239C12.6527 11.7679 12.6524 12.1636 12.4087 12.4077C12.1646 12.6518 11.769 12.6518 11.5249 12.4077L7.99951 8.88232L4.40869 12.4751C4.16461 12.7192 3.768 12.7192 3.52393 12.4751C3.28024 12.231 3.28012 11.8353 3.52393 11.5913L7.11572 7.99854L3.5249 4.40869C3.28088 4.16466 3.28098 3.76899 3.5249 3.5249Z\" fill=\"white\"></path></svg>",
+  "ctx": "Privacy Preference Center"
+ },
+ {
+  "id": 24,
+  "count": 1,
+  "sample": "<svg data-custom=\"true\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 12L6.17678 8.17678C6.07915 8.07915 6.07915 7.92085 6.17678 7.82322L10 4\" stroke=\"white\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+  "ctx": "[object SVGAnimatedString]"
+ },
+ {
+  "id": 25,
+  "count": 1,
+  "sample": "<svg data-custom=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.75 3.125C11.8566 3.125 14.375 5.6434 14.375 8.75C14.375 10.0778 13.913 11.2966 13.1436 12.2588L17.1084 16.2246C17.3525 16.4687 17.3525 16.8643 17.1084 17.1084C16.8643 17.3525 16.4687 17.3525 16.2246 17.1084L12.2588 13.1436C11.2966 13.913 10.0778 14.375 8.75 14.375C5.6434 14.375 3.125 11.8566 3.125 8.75C3.125 5.6434 5.6434 3.125 8.75 3.125ZM8.75 4.375C6.33375 4.375 4.375 6.33375 4.375 8.75C4.375 11.1662 6.33375 13.125 8.75 13.125C11.1662 13.125 13.125 11.1662 13.125 8.75C13.125 6.33375 11.1662 4.375 8.75 4.375Z\" fill=\"#A0A9BE\"></path></svg>",
+  "ctx": "[object SVGAnimatedString]"
+ },
+ {
+  "id": 26,
+  "count": 1,
+  "sample": "<svg data-custom=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4.74512 6.49683H15.2544\" stroke=\"#A0A9BE\" stroke-width=\"1.25\" stroke-linecap=\"round\"></path><path d=\"M6.49707 10.0002L13.5033 9.99995\" stroke=\"#A0A9BE\" stroke-width=\"1.25\" stroke-linecap=\"round\"></path><path d=\"M8.24805 13.5032H11.7511\" stroke=\"#A0A9BE\" stroke-width=\"1.25\" stroke-linecap=\"round\"></path></svg>",
+  "ctx": "[object SVGAnimatedString]"
+ }
+]

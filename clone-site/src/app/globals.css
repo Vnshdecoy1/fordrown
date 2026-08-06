@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-navy-900: #080d1b;
+  --color-navy-800: #0b1420;
+  --color-navy-700: #131d32;
+  --color-navy-600: #151d32;
+  --color-navy-500: #273d5d;
+  --color-navy-400: #33517b;
+  --color-navy-300: #232e4a;
+
+  --color-blue-brand: #1199fa;
+  --color-blue-light: #92d1ff;
+  --color-blue-soft: rgba(17, 153, 250, 0.2);
+
+  --color-white-text: #f7f9fa;
+  --color-grey-100: #c9cfdd;
+  --color-grey-200: #a0a9be;
+  --color-grey-300: #7b849b;
+  --color-grey-400: #323c52;
+  --color-grey-50: #f7f9fa;
+
+  --color-content-primary: #f7f9fa;
+  --color-content-secondary: #a0a9be;
+  --color-content-tertiary: #7b849b;
+  --color-content-active: #1199fa;
+  --color-content-contrast-primary: #0b1420;
+
+  --color-btn-primary-bg: #1199fa;
+  --color-btn-secondary-bg: rgba(255, 255, 255, 0.08);
+
+  --color-lightblue: #f0f5ff;
+
+  --color-auth-bg: #0b1426;
+  --color-auth-card: #151d32;
+  --color-auth-card-border: rgba(255, 255, 255, 0.1);
+  --color-auth-input-border: rgba(255, 255, 255, 0.2);
+  --color-auth-btn: #0577da;
+  --color-auth-btn-hover: #1199fa;
+  --color-auth-seg-bg: #1f283c;
+  --color-auth-seg-active: rgba(17, 153, 250, 0.2);
+  --color-auth-danger: #e0485c;
+  --color-auth-border: #4b5563;
+  --color-auth-social-hover: #eef1f5;
+  --color-auth-or: #828282;
+
+  --radius: 0.625rem;
+}
+
+:root {
+  --background: #080d1b;
+  --foreground: #f7f9fa;
+  --card: #131d32;
+  --card-foreground: #f7f9fa;
+  --popover: #131d32;
+  --popover-foreground: #f7f9fa;
+  --primary: #1199fa;
+  --primary-foreground: #f7f9fa;
+  --secondary: #151d32;
+  --secondary-foreground: #f7f9fa;
+  --muted: #151d32;
+  --muted-foreground: #a0a9be;
+  --accent: #151d32;
+  --accent-foreground: #f7f9fa;
+  --destructive: #e5484d;
+  --border: #323c52;
+  --input: #323c52;
+  --ring: #1199fa;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes shine-sweep {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

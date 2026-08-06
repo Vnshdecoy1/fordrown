@@ -1,0 +1,38 @@
+[
+ {
+  "q": "What is cryptocurrency and how does it work?",
+  "a": "Cryptocurrency is a digital-first form of money designed to operate entirely independent of traditional banks or government control. Rather than relying on physical cash, it exists securely as digital data.Its value is driven by market supply and demand. You can use crypto to buy goods, transfer funds globally or trade on digital asset markets. Popular cryptocurrencies include Bitcoin (BTC), Ethereum (ETH) and CRO. Most crypto networks are secured by ‘consensus mechanisms’ like Proof of Work (PoW) or energy-efficient Proof of Stake (PoS)."
+ },
+ {
+  "q": "Where is the best place to buy crypto?",
+  "a": "Crypto brokerages and apps: For example, the Crypto.com App (trusted by over 150 million users globally) offers a seamless way to buy and sell crypto directly from your mobile device.Cryptocurrency exchanges: Advanced platforms like the Crypto.com Exchange offer deeper liquidity, trading bots and more complex order types for experienced traders.DeFi and P2P marketplaces: Decentralized Finance (DeFi) platforms enable peer-to-peer trading. You can access these via self-custodial wallets like the Crypto.com Onchain Wallet.Always choose a heavily regulated and secure platform. Crypto.com currently holds the highest security and compliance ratings in the industry."
+ },
+ {
+  "q": "How do I buy cryptocurrency safely?",
+  "a": "Download the Crypto.com App from the Apple App Store or Google Play.Create your account and complete the standard 'Know Your Customer' (KYC) verification process.Fund your account via instant, zero-fee* deposits via bank transfer, debit/credit card or existing crypto wallet.Navigate to the 'Buy' section on the App, choose from over 400+ supported cryptocurrencies, enter your amount and confirm your transaction.* Other fees and spread may apply."
+ },
+ {
+  "q": "How can I earn crypto rewards?",
+  "a": "Staking and lockups: Help secure blockchain networks by staking your assets and earn potential rewards in return.Crypto.com Visa Card: Join our Level Up program and earn potential CRO and BTC rewards on your qualifying everyday spend.Onchain Earn: Access variable reward rates through the DeFi integrations in the Crypto.com Onchain App."
+ },
+ {
+  "q": "Can I use AI to trade crypto?",
+  "a": "Yes, Crypto.com supports automated, intelligent trading to help you optimize your strategy. You can use trading bots – such as Dollar Cost Averaging (DCA), Grid, and Time-Weighted Average Price (TWAP) bots – to automate your trades based on predefined market conditions."
+ },
+ {
+  "q": "What is the Crypto.com AI Agent SDK?",
+  "a": "For developers and advanced Web3 users, Crypto.com offers the AI Agent SDK on the Cronos chain. This enables developers to build, train and deploy AI-driven agents that can interact with smart contracts, execute complex trading strategies and navigate the DeFi ecosystem autonomously."
+ },
+ {
+  "q": "Can I trade and invest in stocks on Crypto.com?",
+  "a": "Yes, Crypto.com is an all-in-one financial hub. You can seamlessly manage and trade traditional equities alongside your crypto portfolio.12,000+ stocks and ETFs: Invest in your favorite publicly traded companies and exchange-traded funds.Whale Baskets: Diversify your portfolio by investing in curated thematic baskets modeled after top market movers."
+ },
+ {
+  "q": "What are prediction markets and how do I trade them?",
+  "a": "Prediction markets enable you to forecast the occurrence or non-occurence of real-world events and trade contracts based on those outcomes. On the Crypto.com App, users can leverage their market knowledge to take positions in the following categories:Sports: Predict the outcomes of major sporting events and tournaments.Financials: Trade on future market caps, stock price milestones or crypto market movements.Politics: Speculate on global political outcomes.Economics: Forecast macroeconomic shifts like inflation rates and central bank rate decisions.Culture: Anticipate the winners of major awards shows, box office successes and more.Prediction is an event contract that is a derivatives product. Trading involves risk and may not be appropriate for all. By trading you risk losing your cost to enter any transaction, including fees. You should carefully consider whether trading is appropriate for you in light of your investment experience and financial resources. Any trading decisions you make are solely your responsibility and at your own risk."
+ },
+ {
+  "q": "Can I manage my crypto, stocks and prediction markets in one app?",
+  "a": "Yes, the Crypto.com App is designed so that you can seamlessly manage your entire portfolio in one place. Whether you’re buying the dip on Bitcoin, investing in a trending tech stock or taking a position on an upcoming election, you can execute your entire strategy from a single, secure dashboard.Plus, instead of waiting days for bank transfers to clear between different brokerages, you can use your instant, zero-fee* deposits to react quickly to global market movements.* Other fees and spread may apply."
+ }
+]
