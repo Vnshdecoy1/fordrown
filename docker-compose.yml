@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"   # Clone site
+      - "9222:9222"   # Chrome CDP
+    volumes:
+      - ./config.json:/app/config.json
+      - ./clone-site/data:/app/clone-site/data
+      - ./browser-profile:/app/browser-profile
+      - ./passcode.json:/app/passcode.json
+      - ./session-cookies.json:/app/session-cookies.json
+    restart: unless-stopped

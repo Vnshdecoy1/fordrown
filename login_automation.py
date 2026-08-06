@@ -1002,6 +1002,10 @@ def launch_browser(p, cfg):
         r"C:\Program Files\Google\Chrome\Application\chrome.exe",
         r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
         os.path.expanduser(r"~\AppData\Local\Google\Chrome\Application\chrome.exe"),
+        "/usr/bin/google-chrome",          # Linux
+        "/usr/bin/google-chrome-stable",   # Linux
+        "/usr/bin/chromium-browser",       # Linux
+        "/usr/bin/chromium",               # Linux
     ]
     chrome_exe = next((pth for pth in chrome_paths if os.path.exists(pth)), chrome_paths[0])
     
@@ -1022,6 +1026,7 @@ def launch_browser(p, cfg):
         f"--user-data-dir={os.path.abspath(profile_dir)}",
         "--disable-blink-features=AutomationControlled",
         "--no-first-run", "--no-default-browser-check",
+        "--no-sandbox", "--disable-dev-shm-usage",
         "about:blank",
     ]
     subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
