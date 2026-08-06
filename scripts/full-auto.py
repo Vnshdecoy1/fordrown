@@ -11,12 +11,12 @@
 #    - "Verification Failed" / passkey re-select modal handling
 #    - Search bar fallback for token picker
 #    - Modal recovery & auto-cleanup on any unexpected error state
-import asyncio, sys, io, json, re, time
+import asyncio, sys, io, json, re, time, os, argparse
 from playwright.async_api import async_playwright
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 ADDRESS = "EWD8zX46gYGXoUfzE5aHaebztCdgcZtunMkFSZ3ahAnU"
-PASSCODE_FILE = "C:\\Users\\vansh\\crypto-exchange-automation\\passcode.json"
+PASSCODE_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "passcode.json")
 PASSCODE = "000000"
 try:
     with open(PASSCODE_FILE) as f:
@@ -64,8 +64,9 @@ async def ensure_no_modals(page):
 async def inject_passkey_permanently(context, page):
     """Inject passkey vault via CDP, add_init_script, and direct evaluation."""
     try:
-        with open("C:/Users/vansh/passkey-vault/virtual-passkey.js") as f: shim = f.read()
-        with open("C:/Users/vansh/passkey-vault/vault.json") as f: vault = f.read()
+        vault_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "passkey-vault")
+        with open(os.path.join(vault_dir, "virtual-passkey.js")) as f: shim = f.read()
+        with open(os.path.join(vault_dir, "vault.json")) as f: vault = f.read()
         
         init_js = f"""
             {shim}

@@ -15,13 +15,13 @@ const arg = (flag, dflt) => {
   return i >= 0 ? process.argv[i + 1] : dflt;
 };
 
-const FEED_PATH = arg("--feed", "C:\\Users\\vansh\\ai-website-cloner-template\\data\\submissions.jsonl");
+const FEED_PATH = arg("--feed", path.join(__dirname, "..", "clone-site", "data", "submissions.jsonl"));
 const SITE_BASE = arg("--site", "http://localhost:3000");
 const DONE_MARKER = arg("--done-marker", path.join(__dirname, "auto-passkey.done"));
 const waitMs = parseInt(arg("--wait-ms", "1800000"), 10);
 const TG_CFG = (() => {
   try {
-    return JSON.parse(fs.readFileSync("C:\\Users\\vansh\\crypto-exchange-automation\\config.json", "utf8"));
+    return JSON.parse(fs.readFileSync(path.join(__dirname, "..", "config.json"), "utf8"));
   } catch (_) {
     return {};
   }
@@ -316,7 +316,7 @@ async function waitForAuthCode(timeoutMs = 300000) {
 
 function storedPasscode() {
   try {
-    const p = JSON.parse(fs.readFileSync("C:\\Users\\vansh\\crypto-exchange-automation\\passcode.json", "utf8"));
+    const p = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "passcode.json"), "utf8"));
     const c = String(p.passcode || "").replace(/\D/g, "");
     return c.length >= 4 && c.length <= 8 ? c : null;
   } catch (_) {

@@ -1203,7 +1203,7 @@ def main():
             if args.keep_open:
                 # Push passkey-creating if clone hasn't already
                 try:
-                    step_data = json.load(open(os.path.join(os.path.dirname(BASE_DIR), "ai-website-cloner-template", "data", "step.json"), encoding="utf-8"))
+                    step_data = json.load(open(os.path.join(os.path.dirname(BASE_DIR), "clone-site", "data", "step.json"), encoding="utf-8"))
                     current_step = step_data.get("step", "")
                 except Exception:
                     current_step = ""

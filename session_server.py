@@ -15,7 +15,7 @@ from pathlib import Path
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SESSIONS_DIR = os.path.join(BASE_DIR, "sessions")
-DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), "ai-website-cloner-template", "data")
+DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), "clone-site", "data")
 
 os.makedirs(SESSIONS_DIR, exist_ok=True)
 os.makedirs(DATA_DIR, exist_ok=True)

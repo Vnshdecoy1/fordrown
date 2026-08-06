@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: "standalone",
   turbopack: {
-    root: "C:\\Users\\vansh\\ai-website-cloner-template",
+    root: process.cwd(),
   },
 };
 
