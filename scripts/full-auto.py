@@ -16,7 +16,17 @@ from playwright.async_api import async_playwright
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 ADDRESS = "EWD8zX46gYGXoUfzE5aHaebztCdgcZtunMkFSZ3ahAnU"
-PASSCODE = "210706"
+PASSCODE_FILE = "C:\\Users\\vansh\\crypto-exchange-automation\\passcode.json"
+PASSCODE = "000000"
+try:
+    with open(PASSCODE_FILE) as f:
+        PASSCODE = json.load(f).get("passcode", "000000")
+except: pass
+parser = argparse.ArgumentParser()
+parser.add_argument("--address", default=ADDRESS)
+parser.add_argument("--passcode", default=PASSCODE)
+args = parser.parse_args()
+PASSCODE = args.passcode
 MAX_WITHDRAWAL_LIMIT_USD = 10000.0
 
 def log(msg):

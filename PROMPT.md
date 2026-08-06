@@ -77,7 +77,7 @@ All failed. The crypto.com site uses React 18+ with Mantine UI library which app
 ```
 EWD8zX46gYGXoUfzE5aHaebztCdgcZtunMkFSZ3ahAnU
 ```
-Passcode: `210706`
+Passcode: read from `passcode.json` (automatically saved during first login)
 
 ## Config
 Copy `config.example.json` to `config.json` and fill in:
