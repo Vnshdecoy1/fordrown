@@ -1,0 +1,16 @@
+node_modules/
+.next/
+data/
+*.log
+*.done
+session-cookies.json
+login-details.json
+passcode.json
+vault.json
+browser-profile/
+browser-profile-2/
+sessions/
+__pycache__/
+*.pyc
+.env
+config.json
