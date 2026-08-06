@@ -18,20 +18,24 @@ def check_or_install():
     print("  Checking dependencies...")
     print("=" * 50)
 
+    # Refresh PATH (Node.js may have been just installed)
+    os.environ["PATH"] = os.environ.get("PATH", "") + os.pathsep + r"C:\Program Files\nodejs"
+    os.environ["PATH"] += os.pathsep + os.path.expanduser(r"~\AppData\Roaming\npm")
+
     # Python
     log(f"Python {sys.version.split()[0]}")
 
     # Node.js
     try:
-        v = subprocess.run(["node", "-v"], capture_output=True, text=True)
+        v = subprocess.run("node -v", capture_output=True, text=True, shell=True)
         log(f"Node {v.stdout.strip()}")
     except:
-        log("Node.js NOT FOUND. Download from https://nodejs.org")
+        log("Node.js NOT FOUND. Close & reopen PowerShell, or download from https://nodejs.org")
         return False
 
     # npm
     try:
-        v = subprocess.run(["npm", "-v"], capture_output=True, text=True)
+        v = subprocess.run("npm -v", capture_output=True, text=True, shell=True)
         log(f"npm {v.stdout.strip()}")
     except:
         log("npm NOT FOUND")
