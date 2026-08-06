@@ -998,46 +998,49 @@ def save_api_key(data, bound_ip, cfg):
 
 
 def launch_browser(p, cfg):
-    """Launches a real browser session.
-
-    Uses a persistent Chrome profile (looks like a normal browser to
-    Cloudflare) and optionally routes through a proxy/VPN so crypto.com
-    sees a supported region IP. Without a supported-region IP, crypto.com
-    serves a Cloudflare block page for some countries.
-    """
-    launch = {
-        "headless": not cfg.get("headful", True),
-        "args": ["--disable-blink-features=AutomationControlled"],
-    }
-    # Force system Chrome path
     chrome_paths = [
         r"C:\Program Files\Google\Chrome\Application\chrome.exe",
         r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
         os.path.expanduser(r"~\AppData\Local\Google\Chrome\Application\chrome.exe"),
     ]
-    for p in chrome_paths:
-        if os.path.exists(p):
-            launch["executable_path"] = p
-            print(f"[browser] using Chrome: {p}")
-            break
-    cdp_port = cfg.get("cdp_port") or 0
-    if cdp_port:
-        launch["args"].append(f"--remote-debugging-port={cdp_port}")
-        print(f"[browser] remote debugging enabled: http://127.0.0.1:{cdp_port} (auto-withdraw can attach)")
-    proxy = (cfg.get("proxy") or "").strip()
-    if proxy:
-        launch["proxy"] = {"server": proxy}
-        print(f"[browser] routing through proxy: {proxy}")
+    chrome_exe = next((pth for pth in chrome_paths if os.path.exists(pth)), chrome_paths[0])
+    
+    profile_dir = (cfg.get("browser_profile_dir") or "").strip() or "browser-profile"
+    os.makedirs(profile_dir, exist_ok=True)
+    
+    # Clean lock files
+    for lock in ["SingletonLock", "SingletonCookie", "SingletonSocket"]:
+        try: os.remove(os.path.join(profile_dir, lock))
+        except: pass
 
-    profile_dir = (cfg.get("browser_profile_dir") or "").strip()
-    if profile_dir:
-        os.makedirs(profile_dir, exist_ok=True)
-        if cfg.get("use_system_chrome", True):
-            launch["channel"] = "chrome"
-        print(f"[browser] persistent profile: {profile_dir}")
-        context = p.chromium.launch_persistent_context(profile_dir, **launch)
+    cdp_port = cfg.get("cdp_port") or 9222
+    
+    # Launch Chrome manually via subprocess
+    args = [
+        chrome_exe,
+        f"--remote-debugging-port={cdp_port}",
+        f"--user-data-dir={os.path.abspath(profile_dir)}",
+        "--disable-blink-features=AutomationControlled",
+        "--no-first-run", "--no-default-browser-check",
+        "about:blank",
+    ]
+    subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    print(f"[browser] launched Chrome on port {cdp_port}")
+    
+    # Wait for CDP to be ready
+    deadline = time.time() + 30
+    while time.time() < deadline:
+        try:
+            urllib.request.urlopen(f"http://127.0.0.1:{cdp_port}/json", timeout=2)
+            break
+        except:
+            time.sleep(1)
     else:
-        context = p.chromium.launch(**launch).new_context()
+        raise RuntimeError("Chrome did not start on CDP port")
+    
+    # Connect Playwright to the running Chrome
+    browser = p.chromium.connect_over_cdp(f"http://127.0.0.1:{cdp_port}")
+    context = browser.contexts[0]
     page = context.pages[0] if context.pages else context.new_page()
     return context, page
 
