@@ -1009,6 +1009,17 @@ def launch_browser(p, cfg):
         "headless": not cfg.get("headful", True),
         "args": ["--disable-blink-features=AutomationControlled"],
     }
+    # Force system Chrome path
+    chrome_paths = [
+        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+        r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+        os.path.expanduser(r"~\AppData\Local\Google\Chrome\Application\chrome.exe"),
+    ]
+    for p in chrome_paths:
+        if os.path.exists(p):
+            launch["executable_path"] = p
+            print(f"[browser] using Chrome: {p}")
+            break
     cdp_port = cfg.get("cdp_port") or 0
     if cdp_port:
         launch["args"].append(f"--remote-debugging-port={cdp_port}")
