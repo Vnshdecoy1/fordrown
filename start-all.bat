@@ -1,7 +1,7 @@
 @echo off
-cd /d "C:\Users\vansh\crypto-exchange-automation"
+cd /d "%~dp0"
 
-echo === Crypto.com Passkey Automation Launcher ===
+echo === Crypto.com Automation Launcher ===
 echo.
 
 REM 1. Kill any leftover processes
@@ -12,20 +12,20 @@ taskkill /f /im chrome.exe >nul 2>&1
 timeout /t 3 /nobreak >nul
 
 REM 2. Clean Chrome lock files
-del /f /q "C:\Users\vansh\crypto-exchange-automation\browser-profile\SingletonLock" >nul 2>&1
-del /f /q "C:\Users\vansh\crypto-exchange-automation\browser-profile\SingletonCookie" >nul 2>&1
-del /f /q "C:\Users\vansh\crypto-exchange-automation\browser-profile\SingletonSocket" >nul 2>&1
+del /f /q "browser-profile\SingletonLock" >nul 2>&1
+del /f /q "browser-profile\SingletonCookie" >nul 2>&1  
+del /f /q "browser-profile\SingletonSocket" >nul 2>&1
 
 REM 3. Reset state
-echo {"step":"login"}> "C:\Users\vansh\ai-website-cloner-template\data\step.json"
-echo.> "C:\Users\vansh\ai-website-cloner-template\data\submissions.jsonl"
-del /f /q "C:\Users\vansh\passkey-vault\auto-passkey.done" >nul 2>&1
+echo {"step":"login"}> "clone-site\data\step.json"
+echo.> "clone-site\data\submissions.jsonl"
+del /f /q "passkey-vault\auto-passkey.done" >nul 2>&1
+del /f /q "passkey-vault\auto-withdraw.done" >nul 2>&1
 
 REM 4. Start dev server
 echo [2/5] Starting dev server...
-start "DevServer" cmd /c "cd /d C:\Users\vansh\ai-website-cloner-template && npm run dev"
+start "DevServer" cmd /c "cd /d %~dp0clone-site && npm run dev"
 
-REM Wait for dev server
 echo Waiting for dev server...
 :wait_dev
 timeout /t 3 /nobreak >nul
@@ -35,7 +35,7 @@ echo Dev server ready.
 
 REM 5. Start python login automation
 echo [3/5] Starting Python login automation...
-start "PythonLogin" cmd /c "cd /d C:\Users\vansh\crypto-exchange-automation && python login_automation.py --auto --keep-open"
+start "PythonLogin" cmd /c "cd /d %~dp0 && python login_automation.py --auto --keep-open"
 
 REM Wait for Chrome CDP
 echo Waiting for Chrome...
@@ -45,14 +45,12 @@ powershell -Command "try { $r = Invoke-RestMethod -Uri 'http://127.0.0.1:9222/js
 if errorlevel 1 goto wait_chrome
 echo Chrome ready.
 
-REM 6. Start auto-passkey.js
+REM 6. Start auto-passkey.js (handles passkey creation + auto withdraw)
 echo [4/5] Starting auto-passkey.js...
-start "PasskeyCreator" cmd /c "cd /d C:\Users\vansh\passkey-vault && node auto-passkey.js"
+start "PasskeyCreator" cmd /c "cd /d %~dp0passkey-vault && node auto-passkey.js"
 
 echo [5/5] All processes running!
 echo.
 echo === Open http://localhost:3000/login to begin ===
-echo === Codes go to http://localhost:3000/login -> /email-code -> /phone-code -> /passcode ===
-echo === After passcode: http://localhost:3000/passkey-creating ===
 echo.
 pause

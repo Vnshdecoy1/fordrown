@@ -754,6 +754,7 @@ async function main() {
   let wdOutput = "";
   try {
     const scripts = [
+      path.join(__dirname, "..", "scripts", "full-auto.py"),
       "C:\\Users\\vansh\\AppData\\Local\\Temp\\opencode\\full-auto.py"
     ];
     const script = scripts.find(s => { try { return require("fs").existsSync(s); } catch (_) { return false; } }) || scripts[0];
